@@ -1,0 +1,31 @@
+
+.logo{
+    
+    width: 184px;
+    height: 60px;
+    left: 0px;
+    top: 0px;
+
+}
+.navigation{
+    display: flex;
+    list-style: none;
+    width: 443px;
+    height: 27px;
+    left: 757px;
+    top: 16px;
+    background-color:  #CDCDCD;
+    
+
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navItem{
+    margin: 10px;
+
+}
+
