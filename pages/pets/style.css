@@ -21,7 +21,7 @@ ul.topnav {
 
 ul.topnav li {
   float: right;
-  order: reverse;
+  
 
 }
 
@@ -42,7 +42,7 @@ ul.topnav li a.active {background-color: #e7edeb;}
 
 ul.topnav li.right {
   float: right;
-  order: reverse;
+  
 
 }
 
@@ -95,7 +95,7 @@ img {vertical-align: middle;}
 
 /* Position the "next button" to the right */
 .next {
-  right: 0;
+  right: 1;
   border-radius: 3px 0 0 3px;
 }
 
@@ -106,7 +106,7 @@ img {vertical-align: middle;}
 
 /* Caption text */
 .text {
-  color: #f2f2f2;
+  color: #f5ecec;
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
@@ -177,4 +177,20 @@ img {vertical-align: middle;}
 }
 .divDogs3{
   float: right;
+}
+
+.pet_btn {
+  border: none;
+  cursor: pointer;
+  border: 2px solid #F1CDB3;
+  padding: 15px 30px;
+  border-radius: 20px;
+}
+
+.column{
+  background-color: rgb(254, 249, 249);
+}
+
+.pbutton{
+  text-align: center;
 }
