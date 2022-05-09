@@ -225,25 +225,29 @@ ul.topnav {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  color: rgb(200, 52, 52);
   background: url("../../assets/images/start-screen-gradient-background.jpg"), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #211F20;
 
 }
 
-ul.topnav li {float: right;}
+ul.topnav li {
+    float: right;
+}
 
 
 
 ul.topnav li a {
   display: block;
-  color: rgb(32, 31, 31);
+  color: rgb(242, 231, 231);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
-ul.topnav li a:hover:not(.active) {background-color: rgb(225, 217, 217);}
 
-ul.topnav li a.active {background-color: #e7edeb;}
+ul.topnav li a:hover:not(.active) {background-color: rgb(202, 178, 178);}
+
+
 
 ul.topnav li.right {float: right;}
 
@@ -254,7 +258,34 @@ ul.topnav li.right {float: right;}
 
 .logo{
     
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 90%;
+    letter-spacing: 0.1em;
+    
+    width: 184px;
+    height: 35px;
+    left: 0px;
+    color: #F1CDB3;
+    
+    align-items: center;
+    
+    
+}
+.logo_text2{
+    align-items: center;
+    letter-spacing: 0.1em;
+    margin: 0px;
+    padding: 10px;
+    color: #FFFFFF;
+    display: flex;
     align-items: center;
     letter-spacing: 0.1em;
 
+}
+
+.logodiv{
+    position: absolute;
 }
