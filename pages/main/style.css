@@ -33,11 +33,10 @@
    
 }
 .img-dog{
-    padding-bottom: 0px;
+    
     width: 600px;
-    padding-left: 100‒;
-    padding-left: 150px;
-    padding-right: 40px;
+    float: right;
+    
 }
 
 .start_sc_conntent{
@@ -245,9 +244,9 @@ ul.topnav li a {
 }
 
 
-ul.topnav li a:hover:not(.active) {background-color: rgb(202, 178, 178);}
 
 
+ul.topnav li a.active {background-color: #e7edeb;}
 
 ul.topnav li.right {float: right;}
 
