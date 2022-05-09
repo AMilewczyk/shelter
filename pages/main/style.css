@@ -2,7 +2,7 @@
 .body{
     max-width: 1280px;
     margin: 0 auto;
-    height: 3796px;
+    height: auto;
     border-color:green;
     
     
@@ -19,7 +19,7 @@
 .section{
     
     background-color: gray;
-    
+    height: auto;
     left: 0%;
     right: 0%;
     top: 0px;
@@ -37,18 +37,19 @@
     width: 600px;
     float: right;
     
+    
 }
 
 .start_sc_conntent{
-    width: 1200px;
-    height: 728px;
+    width: auto;
+    height: auto;
     left: 40px;
     top: 180px;
     
 }
 
 .start_sc_conntent2{
-    width: 460px;
+    width: auto;
     height: 322px;
     left: 0px;
     top: 163px;
