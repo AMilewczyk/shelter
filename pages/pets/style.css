@@ -8,11 +8,12 @@ span{
 }
 
 ul.topnav {
+  
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  
+  order: -1;
   padding: 30px;
   
   /* start-screen-gradient-background */
@@ -21,6 +22,8 @@ ul.topnav {
 
 ul.topnav li {
   float: right;
+  
+  
   
 
 }
@@ -41,7 +44,7 @@ ul.topnav li a:hover:not(.active) {background-color: rgb(225, 217, 217);}
 ul.topnav li a.active {background-color: #e7edeb;}
 
 ul.topnav li.right {
-  float: right;
+  
   
 
 }
@@ -55,6 +58,7 @@ ul.topnav li.right {
     
     align-items: center;
     letter-spacing: 0.1em;
+    float: left;
 
 }
 .section1{
@@ -158,7 +162,7 @@ img {vertical-align: middle;}
 
 
 .footer{
-    background: orange;
+    
     height: 350px;
     left: 0%;
     right: 0%;

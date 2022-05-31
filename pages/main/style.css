@@ -1,5 +1,12 @@
 
+@media screen and (min-width: 780px) {
+    .full-width-img {
+    margin: auto;
+    width: 90%;
+    }
+
 .body{
+    
     max-width: 1280px;
     margin: 0 auto;
     height: auto;
@@ -7,6 +14,13 @@
     
     
 }
+
+
+  /* On smaller screens, decrease text size 
+@media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+*/
 
 
 .main{
@@ -23,7 +37,7 @@
     left: 0%;
     right: 0%;
     top: 0px;
-    height: 1200px;
+    height: 730px;
     width: auto;
 
      /* start-screen-gradient-background */
@@ -32,19 +46,31 @@
 
    
 }
-.img-dog{
-    
-    width: 600px;
+
+.div_dog{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.img-dog{  
+    width: auto;
+    height: auto;
+    object-fit: cover;
     float: right;
-    
+    box-sizing: border-box;
     
 }
 
 .start_sc_conntent{
+    display: flex;
+    justify-content: left;
+    
     width: auto;
     height: auto;
     left: 40px;
     top: 180px;
+    
+    object-fit: cover;
     
 }
 
