@@ -1,5 +1,11 @@
-body {margin: 0;}
 
+body {margin: 0;}
+@media screen and (min-width: 768px) {
+  .full-width-img {
+  margin: auto;
+  width: 90%;
+  }
+  
 h2{
   text-align: center;
 }
