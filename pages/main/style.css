@@ -5,6 +5,7 @@
     width: 90%;
     }
 
+
 .body{
     
     max-width: 1280px;
@@ -50,16 +51,47 @@
 .div_dog{
     display: flex;
     justify-content: flex-end;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    float: right;
+    box-sizing: border-box; 
 }
 
+/*
 .img-dog{  
     width: auto;
     height: auto;
     object-fit: cover;
     float: right;
-    box-sizing: border-box;
+    box-sizing: border-box;  
+}
+*/
+
+.div_about_pets{
+    
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    
     
 }
+.div_about_pets2{
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-basis: 500px;
+    flex-grow: 1;
+       
+}
+
+.img-about{
+    display: flex;
+    direction: center;
+}
+
+
 
 .start_sc_conntent{
     display: flex;
@@ -165,10 +197,12 @@
 
 
 .section1{
-    height: 588px;
+    
+
+    height: auto;
     left: 0%;
     right: 0%;
-    top: 910px;
+    top: auto;
 
     /* color-light-xl */
     background: #a7a2a2;
@@ -296,10 +330,10 @@ ul.topnav li.right {float: right;}
     left: 0px;
     color: #F1CDB3;
     
-    align-items: center;
-    
+    align-items: center;   
     
 }
+
 .logo_text2{
     align-items: center;
     letter-spacing: 0.1em;
@@ -314,4 +348,5 @@ ul.topnav li.right {float: right;}
 
 .logodiv{
     position: absolute;
+}
 }
