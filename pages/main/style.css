@@ -78,6 +78,7 @@
 
 .item0{
     padding-left: 200px;
+    padding-top: 50px;
     
 
 }
@@ -139,10 +140,13 @@
     top: 910px;
 
     /* color-light-xl */
-    background: #FFFFFF;
+    
 }
 
 .section3{
+    display: grid;
+    grid-template-rows: 200px 200px; 
+    grid-template-columns: 200px 200px 200px 200px 200px;  
     height: 877px;
     left: 0%;
     right: 0%;
@@ -150,6 +154,20 @@
 
 /* color-light-l */
 background: #F6F6F6;
+}
+
+.item_row1{
+    display: flex;
+    justify-content: center;
+
+}
+
+.item_row2{
+    display: grid;
+    justify-content: right;
+    
+    
+
 }
 
 .section4{
@@ -281,6 +299,21 @@ background: #F6F6F6;
     width: 100%;
 }
 .sliderCard{
+    text-align: center;
+}
+
+.sliderCardText{
+    text-align: center;
+
+}
+
+.sliderCardButton{
+    border: none;
+  cursor: pointer;
+  border: 2px solid #F1CDB3;
+  padding: 15px 30px;
+  border-radius: 20px;
+  background-color: white;
     
 }
 
