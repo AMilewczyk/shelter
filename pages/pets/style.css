@@ -1,10 +1,15 @@
 
+/*
 body {margin: 0;}
 @media screen and (min-width: 768px) {
   .full-width-img {
   margin: auto;
   width: 90%;
   }
+
+  */
+
+
 h2{
   text-align: center;
 }
@@ -12,28 +17,108 @@ span{
   
 }
 
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+
+}
+
+.nav-list {
+  list-style-type: none;
+  width: 100%;
+  text-align: center;
+  padding-top: 10px;
+  display: none;
+
+}
+
+.nav-list .list-item {
+  display: inline-block;
+  padding: 20px 10px;
+}
+
+.primary-icon {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.active {
+  display: block;
+}
+
+.navbar a {
+  color: black;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: gray;
+}
+
+.logo{
+  display: flex;
+  justify-content: space-between;
+  position: column;
+}
+
+.menu {
+  display: none;
+
+}
+.menu-line {
+  width: 20px;
+  height: 3px;
+  background-color: rgb(24, 23, 23);
+  margin-bottom: 4px;
+
+}
+
+@media all and (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    position: relative;
+  }
+  .navbar.container-icon {
+    width: 100px;
+  }
+  .menu {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+
+  }
+}
+
+
+.img-logo{
+  display: flex;
+  justify-content: space-between;
+  position: column;
+
+}
+/*
+
 ul.topnav {
-  
+  display: flex;
+    justify-content: flex-end;
+    display: inline-flex;
+
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   order: -1;
-  padding: 30px;
-  
-  /* start-screen-gradient-background */
+  padding: 30px;  
   background: #FFFFFF;
 }
 
 ul.topnav li {
   float: right;
   
-  
-  
-
 }
-
-
 
 ul.topnav li a {
   display: block;
@@ -59,13 +144,16 @@ ul.topnav li.right {
   ul.topnav li {float: none;}
 }
 
-.logo{
-    
-    align-items: center;
-    letter-spacing: 0.1em;
-    float: left;
 
+
+.divlogo{
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
 }
+
+*/
+
 .section1{
     height: auto;
     width: auto;
@@ -202,5 +290,4 @@ img {vertical-align: middle;}
 
 .pbutton{
   text-align: center;
-}
 }

@@ -10,20 +10,26 @@
 </head>
 <body>
 
-    <nav>
-        <ul class="topnav">
-            <a class="logo">Cozy moments</a><br>
-            <a>Shelter for pets</a>
-            <li><a class="active" href="#home">About the shelter</a></li>
-            <li><a href="#news">Our pets</a></li>
-            <li><a href="#contact">Help the shelter</a></li>
-            <li class="right"><a href="#about">Contact</a></li>
-          </ul>
-          
-    </nav>
-    <section class="section1">
+          <nav class="navbar">
+            <div class="logo">
+              <img class="img_logo"  src="../../assets/images/logo.png">
+             
+            </div>
 
-  
+            <ul class="nav-list" id="navi-list">   
+              <li class="list-item"><a class="active" href="../main/index.html">About the shelter</a></li>
+              <li class="list-item"><a href="#news">Our pets</a></li>
+              <li class="list-item"><a href="#contact">Help the shelter</a></li>
+              <li class="list-item"><a href="#about">Contact</a></li>
+            </ul>
+            <div class="menu" id="toggle-button">
+              <div class="menu-line"></div>
+              <div class="menu-line"></div>
+              <div class="menu-line"></div>
+            </div>
+        </nav>
+
+    <section class="section1">
         <div class="slideshow-container">
           <h2>Our friends who <span>are looking for house</span></h2>
           <div class="row">
@@ -153,4 +159,12 @@
     <p>In progress ;]</p>
     
 </body>
+<script>
+  const toggleButton = document.getElementById('toggle-button');
+  const naviList = document.getElementById('navi-list');
+
+  toggleButton.addEventListener('click', () => {
+    naviList.classList.toggle('active');
+  })
+</script>
 </html>
