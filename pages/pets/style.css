@@ -17,6 +17,10 @@ span{
   
 }
 
+.img_logo{
+
+}
+
 .navbar{
   display: flex;
   justify-content: space-between;
@@ -92,7 +96,7 @@ span{
 }
 
 .naviList{
-  
+
 }
 
 .active1 {
@@ -104,6 +108,21 @@ span{
   display: flex;
   justify-content: space-between;
   position: column;
+  background: black;
+
+}
+
+/* desktop */
+@media all and (min-width: 768px) {
+
+  .list-item{
+      display: block;
+      width: auto;
+  }
+  .nav-list{
+      display: flex;
+      justify-content: flex-end;
+  }
 
 }
 /*
