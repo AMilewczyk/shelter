@@ -1,8 +1,4 @@
-@media screen and (min-width: 768px) {
-    .full-width-img {
-    margin: auto;
-    width: 90%;
-    }
+
 
 
 .body{
@@ -356,44 +352,136 @@ background: #F6F6F6;
 
 body {margin: 0;}
 
-ul.topnav {
+nav{
+    background: url("../../assets/images/start-screen-gradient-background.jpg"), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
+    box-sizing: border-box;
+    padding: 5px 20px;
+}
+
+ul{
+    list-style-type: none;
+
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.menu li{
+    font-size: 16px;
+    padding: 15px 5px;
+}
+
+menu li a{
+    display: block;
+}
+
+/* mobile menu */
+.menu{
     display: flex;
-    justify-content: flex-end;
-
-list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  color: rgb(200, 52, 52);
-  background: url("../../assets/images/start-screen-gradient-background.jpg"), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #211F20;
-
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.toogle{
+    order:1;
+}
+.item.button{
+    order:2;
+}
+.list-item{
+    width:100%;
+    text-align: center;
+    display: none;
 }
 
-ul.topnav li {
-    float: right;
-}
-
-
-
-ul.topnav li a {
-  display: block;
-  color: rgb(242, 231, 231);
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+.item.active{
+    display: block;
 }
 
 
-
-
-ul.topnav li a.active {background-color: #e7edeb;}
-
-ul.topnav li.right {float: right;}
-
-@media screen and (max-width: 600px) {
-  ul.topnav li.right, 
-  ul.topnav li {float: none;}
+.toggle{
+    cursor: pointer;
 }
+
+.bars{
+    background: #999;
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    width: 18px;
+}
+
+.bars::before, .bars::after{
+    background: #999;
+    content:"";
+    display: inline-block;
+    height: 2px;
+    position: absolute;
+    width: 18px;
+}
+
+.bars::before{
+    top: 5px;
+}
+.bars::after{
+    top: -5px;
+}
+
+.active1 {
+    display: block;
+  }
+
+/* tablet menu */
+@media all and (min-width: 468px){
+    .menu{
+        justify-content: center;
+    }
+    .logo{
+        flex:1;
+    }
+    .list-item{
+        width:auto;
+        order:1;
+        display: block;
+    }
+    .toggle{
+        order:2;
+    }
+}
+
+/* desktop */
+@media all and (min-width: 768px) {
+
+    .list-item{
+        display: block;
+        width: auto;
+    }
+    .toggle{
+        display: none;
+    }
+    .logo{
+        order:0;
+    }
+    .list-item{
+        order:1;
+    }
+
+    .menu li{
+        padding: 15px, 10px;
+    }
+    .menu li.button{
+        padding-right:0;
+    }
+
+}
+
+
 
 .logo{
     
@@ -403,6 +491,7 @@ ul.topnav li.right {float: right;}
     font-size: 32px;
     line-height: 90%;
     letter-spacing: 0.1em;
+    order:1;
     
     width: 184px;
     height: 35px;
@@ -431,4 +520,3 @@ ul.topnav li.right {float: right;}
 
 
 
-}

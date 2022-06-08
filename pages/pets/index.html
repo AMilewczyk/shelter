@@ -12,11 +12,11 @@
 
           <nav class="navbar">
             <div class="logo">
-              <img class="img_logo"  src="../../assets/images/logo.png">
+              <img class="img_logo"  src="../../assets/images/Logo.png">
              
             </div>
 
-            <ul class="nav-list" id="navi-list">   
+            <ul id="navi-list" class="nav-list" >   
               <li class="list-item"><a class="active" href="../main/index.html">About the shelter</a></li>
               <li class="list-item"><a href="#news">Our pets</a></li>
               <li class="list-item"><a href="#contact">Help the shelter</a></li>
@@ -158,13 +158,14 @@
       footer</footer>
     <p>In progress ;]</p>
     
+    <script>
+      const toggleButton = document.getElementById('toggle-button');
+      const naviList = document.getElementById('navi-list');
+    
+      toggleButton.addEventListener('click', () => {
+        naviList.classList.toggle('active1');
+      })
+    </script>
 </body>
-<script>
-  const toggleButton = document.getElementById('toggle-button');
-  const naviList = document.getElementById('navi-list');
 
-  toggleButton.addEventListener('click', () => {
-    naviList.classList.toggle('active');
-  })
-</script>
 </html>

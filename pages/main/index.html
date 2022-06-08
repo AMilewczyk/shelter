@@ -12,17 +12,15 @@
     <header class="header">
        
         
-        <nav>
-            <div class="logodiv">
-                <a class="logo"><span>Cozy House</span></a>
-                <a class="logo_text2"><span>Shelter for pets</span></a>
-            </div>
-            <ul class="topnav">
-                
-                <li><a href="#home">About the shelter</a></li>
-                <li><a href="../../pages/pets/index.html">Our pets</a></li>
-                <li><a href="#contact">Help the shelter</a></li>
-                <li class="right"><a href="#about">Contacts</a></li>
+        <nav class="naviList">
+           
+            <ul class="menu" id="menu">
+                <li class="logo"><img class="img_logo"  src="../../assets/images/Logo.png"></li>    
+                <li class="list-item"><a href="#home">About the shelter</a></li>
+                <li class="list-item"><a href="../../pages/pets/index.html">Our pets</a></li>
+                <li class="list-item"><a href="#contact">Help the shelter</a></li>
+                <li class="list-item"><a href="#about">Contacts</a></li>
+                <li class="toggle"><a href="#"><span class="bars"></span></a></li>
               </ul>
               
         </nav>
@@ -161,5 +159,14 @@
     </main>
 
     <footer class="footer" id="footer">footer</footer>
+
+    <script>
+        const toggleButton = document.getElementById('menu');
+        const naviList = document.getElementById('menu');
+      
+        toggleButton.addEventListener('click', () => {
+          naviList.classList.toggle('active1');
+        })
+      </script>
 </body>
 </html>
